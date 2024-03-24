@@ -249,3 +249,30 @@ button.form-btn:hover {
     border: 1px solid rgb(233 68 68 / 20%);
     width: 50%;
 }
+
+
+/* Footer */
+footer.footer-main {
+    background-color: #cbcbcb;
+}
+
+img.footer-logo {
+    width: 200px;
+}
+
+.social-icon {
+    display: flex;
+    width: 85px;
+}
+
+.footer-content p {
+    width: 500px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.footer-content {display: flex;flex-direction: column;gap: 30px;padding: 50px 0 30px 0;}
+
+.bottom-copyright {
+    padding-bottom: 10px;
+}
