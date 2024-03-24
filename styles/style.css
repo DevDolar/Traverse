@@ -1,0 +1,245 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/*********************************** Primary Style ***********************************/
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+:root {
+    --body-font: "Mulish", sans-serif;
+    --body-font-size: 17px;
+    --primary-color: #FF5400;
+    --body-space: calc(100% - 30px);
+    --bg-color: #f3f3f3;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--body-font);
+}
+
+.container{
+    max-width: 1170px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/*********************************** Primary Style ***********************************/
+
+
+/* Header Start */
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img {
+    width: 120px; 
+    height: auto;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin: 0 15px;
+}
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+.menu-icon img {
+    width: 30px;
+    height: auto;
+}
+li.menu-item a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: var(--body-font-size);
+}
+
+li.menu-item a:hover {
+    color: #232323;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 2px;
+}
+li.menu-list a.active, a:active {
+    color: #232323;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 2px;
+}
+
+
+
+
+
+/* Hero Banner */
+.hero-banner {
+    background-image: linear-gradient(rgb(0 0 0 / 55%), #ffff0000), url(/image/her-banner.png);
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.text-area {
+    text-align: center;
+}
+
+.text-area h1 {
+    font-size: 64px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.text-area p {
+    color: #fff;
+    width: 515px;
+    margin: 30px 0;
+}
+
+.form-area {
+    background-color: rgb(255 255 255 / 42%);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-area input, select, button {
+    padding: 15px 15px;
+    width: 200px;
+    border-radius: 10px;
+    border: 0px;
+    font-size: 16px;
+    margin: 5px;
+}
+
+button.form-btn {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+button.form-btn:hover {
+    background-color: #232323;
+    color: white;
+}
+
+
+/* our Popular Tours */
+.our-popular-tours {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.left-text p {
+    padding: 15px 0;
+}
+
+.list li {
+    padding: 15px 0px;
+    list-style: none;
+}
+
+.list .fa-solid {
+    font-size: 5px;
+}
+
+/* Choose Your Destination */
+.title-area {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.title-area p{
+    width: 600px;
+    padding: 20px 0;
+}
+
+.gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.gallery1, .gallery2, .gallery3, .gallery4, .gallery5, .gallery6, .gallery7 {
+    position: relative;
+}
+
+.img-list.gallery1 span, .img-list.gallery2 span, .img-list.gallery3 span, .img-list.gallery4 span, .img-list.gallery5 span, .img-list.gallery6 span, .img-list.gallery7 span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Why Choose us */
+.card-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .card {
+    width: 100%;
+  }
+  
+.card {
+    padding: 30px;
+}
+
+.card img {
+    width: 64px;
+    height: auto;
+    padding-bottom: 15px;
+}
+
+.card p {
+    padding: 10px 0;
+}
+
+.card:nth-child(1){
+    background-color: rgb(251 181 99 / 10%);
+    border: 1px solid rgb(251 181 99 / 20%);
+    border-radius: 20px;
+}
+
+.card:nth-child(2){
+    background-color: rgb(41 206 246 / 10%);
+    border-radius: 20px;
+    border: 1px solid rgb(41 206 246 / 20%);
+}
+.card:nth-child(3){
+    background-color: rgb(233 68 68 / 10%);
+    border-radius: 20px;
+    grid-column: 1 / span 2;
+    border: 1px solid rgb(233 68 68 / 20%);
+    width: 50%;
+}

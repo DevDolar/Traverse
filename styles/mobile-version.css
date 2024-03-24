@@ -1,0 +1,45 @@
+@media screen and (max-width: 600px) {
+    .logo img {
+        width: 125px;
+        height: auto;
+    }
+    nav.menu-list {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+    nav.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background-color: #ff550034;
+        z-index: 1;
+    }
+    nav.active ul li {
+        margin: 10px 0;
+    }
+
+    ul.menu {
+        display: flex;
+        flex-direction: column;
+    }
+    header {
+        justify-content: space-between;
+    }
+
+    ul.menu {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .logo, .menu-icon {
+        margin: 0;
+    }
+    .menu-icon img {
+        color: var(--primary-color);
+    }
+}
