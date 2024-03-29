@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clickable Images</title>
+<style>
+    .products_label {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .products_options {
+        width: calc(100% / 8);
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .products_options img {
+        width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    .products_options img.hidden {
+        display: none;
+        visibility: hidden;
+    }
+</style>
+</head>
+<body>
+<div class="products_label">
+    <div class="products_options">
+        <a onclick="hideImage(this)" href="https://6511c0-cd.myshopify.com/products/top-coat-semi-permanent"><img src="https://cdn.shopify.com/s/files/1/0728/7957/1208/files/top.png?v=1711370777" alt="Top Coat" ></a>
+    </div>
+    <div class="products_options">
+        <a onclick="hideImage(this)" href="https://6511c0-cd.myshopify.com/products/base-coat-semi-permanent-2"><img src="https://cdn.shopify.com/s/files/1/0728/7957/1208/files/BASE.png?v=1711370777" alt="Base Coat"></a>
+    </div>
+    <div class="products_options">
+        <a onclick="hideImage(this)" href="https://6511c0-cd.myshopify.com/products/noir-nature-semi-permanent"><img src="https://cdn.shopify.com/s/files/1/0728/7957/1208/files/Noir_Nature.png?v=1711370846" alt="Noir Nature"  ></a></a>
+    </div>
+    <div class="products_options">
+        <a onclick="hideImage(this)" href="https://6511c0-cd.myshopify.com/products/sable-silencieux-semi-permanent"><img src="https://cdn.shopify.com/s/files/1/0728/7957/1208/files/Sable_Silencieux.png?v=1711371089" alt="Sable Silencieux"  ></a>
+    </div>
+    <div class="products_options">
+        <a onclick="hideImage(this)" href="https://6511c0-cd.myshopify.com/products/serenite-rubis-semi-permanent"><img src="https://cdn.shopify.com/s/files/1/0728/7957/1208/files/S_r_nit_Rubis.png?v=1711371156" alt="Sérénité Rubis"  ></a>
+    </div>
+    <div class="products_options">
+        <a onclick="hideImage(this)" href="https://6511c0-cd.myshopify.com/products/profondeurs-oceaniques-semi-permanent"><img src="https://cdn.shopify.com/s/files/1/0728/7957/1208/files/Profondeurs_Oc_aniques.png?v=1711371118" alt="Profondeurs Océaniques"  ></a>
+    </div>
+    <div class="products_options">
+        <a onclick="hideImage(this)" href="https://6511c0-cd.myshopify.com/products/secrets-de-mure-semi-permanent"><img src="https://cdn.shopify.com/s/files/1/0728/7957/1208/files/Secrets_de_M_re.png?v=1711371174" alt="Secrets de Mûre"  ></a>
+    </div>
+    <div class="products_options">
+        <a onclick="hideImage(this)" href="https://6511c0-cd.myshopify.com/products/chuchotement-corail-semi-permanent"><img src="https://cdn.shopify.com/s/files/1/0728/7957/1208/files/Chuchotement_Corail.png?v=1711371103" alt="Chuchotement Corail"  ></a>
+    </div>
+    <div class="products_options">
+        <a onclick="hideImage(this)" href="https://6511c0-cd.myshopify.com/products/essence-de-vin-semi-permanent"><img src="https://cdn.shopify.com/s/files/1/0728/7957/1208/files/Essence_de_Vin.png?v=1711370951AcZ" alt="Essence de Vin"  ></a>
+    </div>
+    <div class="products_options">
+        <a onclick="hideImage(this)" href="https://6511c0-cd.myshopify.com/products/terre-rougissante-semi-permanent"><img src="https://cdn.shopify.com/s/files/1/0728/7957/1208/files/Terre_Rougissante.png?v=1711371134" alt="Terre Rougissante"  ></a>
+    </div>
+    <div class="products_options">
+        <a onclick="hideImage(this)" href="https://6511c0-cd.myshopify.com/products/petales-purs-semi-permanent"><img src="https://cdn.shopify.com/s/files/1/0728/7957/1208/files/P_tales_Purs.png?v=1711370862" alt="Pétales Purs"  ></a>
+    </div>
+    <div class="products_options">
+        <a onclick="hideImage(this)" href="https://6511c0-cd.myshopify.com/products/dunes-sablonneuses-semi-permanent"><img src="https://cdn.shopify.com/s/files/1/0728/7957/1208/files/Dunes_Sablonneuses.png?v=1711370938" alt="Dunes Sablonneuses"  ></a>
+    </div>
+    <div class="products_options">
+        <a onclick="hideImage(this)" href="https://6511c0-cd.myshopify.com/products/reves-de-lilas-vernis-vegan"><img src="https://cdn.shopify.com/s/files/1/0728/7957/1208/files/R_ves_de_Lilas.png?v=1711370924" alt="reves-de-lilas-vernis-vegan"  ></a>
+    </div>
+    <div class="products_options">
+        <a onclick="hideImage(this)" href="https://6511c0-cd.myshopify.com/products/rouge-terre-semi-permanent"><img src="https://cdn.shopify.com/s/files/1/0728/7957/1208/files/Rouge_Terre.png?v=1711370908" alt="Rouge Terre"  ></a>
+    </div>
+    
+</div>
+
+<script>
+    function hideImage(link) {
+        var parentDiv = link.parentElement;
+        parentDiv.classList.add('hidden');
+    }
+</script>
+</body>
+</html>
+
+
+
+

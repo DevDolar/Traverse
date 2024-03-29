@@ -1,4 +1,5 @@
 @media screen and (max-width: 600px) {
+    /* header */
     .logo img {
         width: 125px;
         height: auto;
@@ -41,5 +42,5 @@
     }
     .menu-icon img {
         color: var(--primary-color);
-    }
+    }         
 }
